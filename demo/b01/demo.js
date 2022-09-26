@@ -1,6 +1,6 @@
 let x = Number(prompt("Nhập x:"));
-// let y = Number(x); // Chuyển x thành number
 
+// Cách dài
 // let x;
 // x = prompt("Nhập x: ");
 // let y;
