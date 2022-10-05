@@ -168,3 +168,21 @@ function maxNumber() {
     if (c > max)
         max = c;
 }
+
+function phanBietKyTuVaSo() {
+    let input = '/';
+
+    if (typeof input === 'number') {
+        console.log('So');
+    } else {
+        if (input >= 'a' && input <= 'z') {
+            console.log('chu THUONG');
+        } else if (input >= 'A' && input <= 'Z') {
+            console.log('chu HOA');
+        } else {
+            console.log('ky tu dac biet');
+        }
+    }
+}
+
+phanBietKyTuVaSo();
