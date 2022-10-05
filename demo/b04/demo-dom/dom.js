@@ -4,9 +4,11 @@
 function change() {
   // Lấy element có id là fruit: Là thẻ h1
   let h1 = document.getElementById("fruit");
+  console.log(h1);
 
   // Thay đổi content của thẻ h1
   h1.innerHTML = "Tạm biệt";
+  // console.log(h1.innerHTML)
 
   // Thay đổi thuộc tính title của thẻ h1
   h1.title = "Bye";
@@ -21,7 +23,7 @@ function change() {
 function getItems() {
   // Lấy tất cả element có tên class là item.
   let items = document.getElementsByClassName("item");
-
+  console.log(items);
   // Cần truy xuất vào một phần tử cụ thể thông qua chỉ số (index)
   items[0].innerHTML = "Chuối";
 }
