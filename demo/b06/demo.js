@@ -66,7 +66,51 @@ function inSNTTrongMang(arr) {
     }
 }
 
-let x = [4, 7, 2, 8, 1];
-inSNTTrongMang(x);
+function bai02() {
+    let x = [4, 7, 2, 8, 1];
+    inSNTTrongMang(x);
+}
 
+function timViTriAmDau(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0)
+            return i;
+    }
+    return -1; // Khong co so am
+}
+
+function timMax(arr) {
+    let max = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max)
+            max = arr[i];
+    }
+    return max;
+}
+
+function timAmMax(arr) {
+    let k = timViTriAmDau(arr);
+
+    if (k == -1)
+        return 0; // Khong co so am
+
+    let max = arr[k];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0 && arr[i] > max)
+            max = arr[i];
+    }
+    return max;
+}
+
+function bai03() {
+    let x = [3, 7, 1, 9, 4];
+    let m = timAmMax(x);
+    if (m == 0) {
+        console.log("Khong co so am");
+    }
+    else {
+        console.log("So am lon nhat la:", m);
+    }
+}
+bai03();
 
