@@ -1,0 +1,6 @@
+[submodule "review/c04/tien"]
+	path = review/c04/tien
+	url = https://github.com/tienlam98/c04-slideshow-java
+[submodule "review/c04/nhan"]
+	path = review/c04/nhan
+	url = https://github.com/NhanHuynhLe003/c04-project
