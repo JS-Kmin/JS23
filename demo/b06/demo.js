@@ -10,12 +10,12 @@ function laSNT(x) {
             dem++;
         }
     }
-    if (dem == 2) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    // if (dem == 2)
+    //     return true;
+    // else
+    //     return false;
+
+    return dem == 2;
 }
 
 function bai01() {
@@ -29,6 +29,44 @@ function bai01() {
     }
 }
 
-bai01();
+function test() {
+    for (let x = 1; x <= 3; x++) {
+        for (let y = 5; y <= 6; y++) {
+            console.log(x, y);
+        }
+    }
+}
+
+function inSNT(m, n) {
+    for (let i = m; i <= n; i++) {
+        let dem = 0;
+        for (let t = 1; t <= i; t++) {
+            // i là ước của x
+            if (i % t == 0) {
+                dem++;
+            }
+        }
+        if (dem == 2)
+            console.log(i);
+    }
+}
+
+function inSNT2(m, n) {
+    for (let i = m; i <= n; i++) {
+        let k = laSNT(i);
+        if (k == true)
+            console.log(i);
+    }
+}
+
+function inSNTTrongMang(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        if (laSNT(arr[i]) == true)
+            console.log(arr[i]);
+    }
+}
+
+let x = [4, 7, 2, 8, 1];
+inSNTTrongMang(x);
 
 
