@@ -62,9 +62,6 @@ function newElement() {
 }
 
 function deleteTask() {
-
-
-
     // Lấy thẻ ul có id là "myUL"
     let ul = document.getElementById("myUL");
     // Lấy danh sách thẻ li
@@ -85,5 +82,23 @@ function deleteTask() {
     }
 }
 
-checkDone();
-deleteTask();
+// checkDone();
+// deleteTask();
+
+// Gop 2 ham checkDone va deleteTask
+function setUp() {
+    // Lấy thẻ ul có id là "myUL"
+    let ul = document.getElementById("myUL");
+    // Lấy danh sách thẻ li
+    let mangLi = ul.children;
+    // Duyệt từng thẻ li. Với mỗi thẻ, thêm sự kiện click vào
+    for (let i = 0; i < mangLi.length; i++) {
+        mangLi[i].onclick = function () {
+            this.classList.toggle("checked");
+        };
+        let span = createSpan("x");
+        mangLi[i].appendChild(span);
+    }
+}
+
+setUp();
