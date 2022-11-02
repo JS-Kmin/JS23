@@ -3,6 +3,12 @@ function say() {
 }
 say();
 
+let say = function() {
+    console.log("hello");
+}
+say();
+
+
 let sing = function() {
     console.log("lalala");
 }
