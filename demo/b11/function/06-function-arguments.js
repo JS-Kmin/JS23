@@ -5,8 +5,8 @@
 
 
 function say() {
-    //console.log(arguments);
-    for (let value of arguments)
-        console.log("Hello", value);
+    console.log(arguments);
+    // for (let value of arguments)
+    //     console.log("Hello", value);
 }
-say("Bao", "Ngoc", "Phuc");
+say("Bao", "Ngoc", "Phuc", "Tien");

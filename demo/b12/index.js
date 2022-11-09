@@ -48,9 +48,11 @@ function chayManChoi(capDo) {
 
 function main() {
     for (let i = 1; i <= 5; i++) {
-        let data = chayManChoi(i);
-        let soBiMat = data[0];
-        let soNguoiDung = data[1];
+        // let data = chayManChoi(i);
+        // let soBiMat = data[0];
+        // let soNguoiDung = data[1];
+
+        let [soBiMat, soNguoiDung] = chayManChoi(i);
 
         console.log(soBiMat);
         console.log(soNguoiDung);

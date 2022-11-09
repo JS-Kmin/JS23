@@ -3,7 +3,7 @@
 // }
 // say("Bao");
 
-function say(firstName, lastName="") {
-    console.log("Hello", firstName, lastName);
+function say(firstName, other, lastName = "Kmin") {
+    console.log("Hello", firstName, lastName, other);
 }
-say("Bao");
+say("Bao", "abc");
