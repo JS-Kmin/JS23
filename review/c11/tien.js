@@ -37,12 +37,13 @@ function taoPoint2D() {
 }
 // taoPoint2D();
 
-
-
 //bai 2 Circle
 class Circle {
     constructor(tam, banKinh) {
-        this.tam = new Point2D(tam.x, tam.y);
+        if (tam instanceof Point2D)
+            this.tam = new Point2D(tam.x, tam.y);
+        else
+            this.tam = new Point2D(0, 0);
         this.banKinh = banKinh;
     }
     scan() {
@@ -67,10 +68,11 @@ class Circle {
 }
 
 function chayBai2() {
-    const n2 = new Point2D(4, 4);
-    const circle1 = new Circle(n2, 5);
-    n2.x = 9;
-    circle1.print();
+    // const n2 = new Point2D(4, 4);
+    const circle1 = new Circle(3, 5);
+    console.log(circle1);
+    // n2.x = 9;
+    // circle1.print();
 
     // const n3 = new Point2D(5, 5);
     // const circle2 = new Circle(n3, 6);

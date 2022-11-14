@@ -17,11 +17,12 @@ let student2 = {
 }
 
 function main() {
-    // student.demo.call(student2);
-    // student.demo.apply(student2);
+    // this là student2
+    student.demo.call(student2);
+    student.demo.apply(student2);
 
-    // student.demo2.call(student2, 1, 2);
-    // student.demo2.apply(student2, [1, 2]);
+    student.demo2.call(student2, 1, 2);
+    student.demo2.apply(student2, [1, 2]);
 }
 
 main();

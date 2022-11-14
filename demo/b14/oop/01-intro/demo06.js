@@ -21,7 +21,8 @@ function main() {
     const s = new Student('Bao', 'Vu', 4.9);
     const t = new Teacher(1, "JavaScript");
 
-    console.log(s instanceof Student);
+    // Hỏi: s có phải là thể hiện (đối tượng) thuộc về lớp Student không?
+    // console.log(s instanceof Student);
     console.log(t instanceof Student);
 }
 

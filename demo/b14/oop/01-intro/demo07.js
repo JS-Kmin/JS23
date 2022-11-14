@@ -1,5 +1,5 @@
 class Student {
-    constructor(fn, ln, s) {
+    constructor(fn = '', ln = '', s = 0) {
         this.firstName = fn;
         this.lastName = ln;
         this.score = s;
@@ -11,8 +11,9 @@ class Student {
 }
 
 function main() {
-    const s1 = new Student();
-    console.log(s1);
+    const s1 = new Student('Bao');
+    const s2 = new Student('Tien', 'Lam');
+    console.log(s2);
 }
 
 main();

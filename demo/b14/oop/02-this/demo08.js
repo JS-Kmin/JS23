@@ -10,7 +10,6 @@ class Demo {
 }
 
 function main() {
-
     const x = new Demo();
     const a = x.action;
     a();

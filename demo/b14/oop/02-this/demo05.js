@@ -16,14 +16,15 @@ function main() {
     // const a = student.demo;
     // a();
 
+    // Bound: Thay đổi ngữ cảnh của this
     // const b = student.demo;
     // const c = b.bind(student2);
     // c();
 
-    // const d = student.demo.bind(student2);
+    // const d = student.demo.bind(student2); // this là student2
     // d();
 
-    // const e = student.demo.bind(student);
+    // const e = student.demo.bind(student); // this là student
     // e();
 }
 

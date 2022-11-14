@@ -40,6 +40,7 @@ function main() {
 
     // s1.score(15); // Error
     s1.score = 15;
+
     console.log(`Điểm sau khi cập nhật: ${s1.score}`);
 }
 

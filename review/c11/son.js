@@ -7,7 +7,7 @@ class Point2D {
         this.y = y;
     }
 
-    scan(x, y) {
+    scan() {
         this.x = Number(readline.question("nhap x: "));
         this.y = Number(readline.question("nhap y: "));
     }

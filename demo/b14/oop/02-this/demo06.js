@@ -4,7 +4,7 @@ class Demo {
     }
 
     action() {
-        console.log('this is:', this);
+        console.log(this);
     };
 }
 
