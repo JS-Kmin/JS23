@@ -7,10 +7,12 @@ class Student {
         this.score = s;
     }
 
+    // Phuong thuc tinh dung thuoc tinh tinh
     static getMinScore() {
         return Student.minScore;
     }
 
+    // Phuong thuc tinh dung thuoc tinh KHONG tinh
     static getScore() {
         return this.score;
     }
@@ -22,8 +24,8 @@ class Student {
 
 function main() {
     const s1 = new Student('Bao', 'Vu', 4.9);
-    console.log(Student.getMinScore());
-    console.log(Student.getScore());
+    // console.log(Student.getMinScore());
+    // console.log(Student.getScore());
     console.log(s1.check());
 }
 
