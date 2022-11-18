@@ -1,6 +1,8 @@
 const readline = require('readline-sync');
 
 class HinhChuNhat {
+    chieuDai = 2;
+    chieuRong = 2;
     constructor(chieuDai = 2, chieuRong = 1) {
         this.chieuDai = chieuDai;
         this.chieuRong = chieuRong;
